@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>All Responses</h1>
+    <% responses.forEach(r => { %>
+        <div style="margin: 20px; border: 1px solid #ccc; padding: 10px;">
+            <p><strong>Name:</strong> <%= r.name %></p>
+            <p><strong>Email:</strong> <%= r.email %></p>
+            <p><strong>Feedback:</strong> <%= r.feedback %></p>
+        </div>
+    <% }) %>
+    <a href="/">Back to form</a>
+</body>
+</html>
